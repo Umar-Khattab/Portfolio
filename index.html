@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Omar Khattab Hassan - Backend Developer specializing in C#, .NET, ASP.NET Core, and secure software design.">
+    <meta name="keywords" content="Omar Khattab, Backend Developer, C#, .NET, ASP.NET Core, Software Engineer">
+    <meta name="author" content="Omar Khattab Hassan">
+    <title>Omar Khattab Hassan | Backend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-text">&lt;OK/&gt;</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="greeting">Hello, I'm</span>
+                <h1 class="hero-title">
+                    <span class="name-highlight">Omar Khattab</span>
+                    <span class="name-last">Hassan</span>
+                </h1>
+                <div class="typing-container">
+                    <span class="static-text">I'm a </span>
+                    <span class="dynamic-text" id="typed-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Passionate about building robust backend systems, secure APIs, and scalable software solutions.
+                    I turn complex problems into elegant code.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="24">0</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="5">0</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="100">0</span>
+                        <span class="stat-label">% Dedication</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="code-title">omar_khattab.cs</span>
+                    </div>
+                    <pre class="code-content"><code><span class="keyword">public class</span> <span class="class-name">Developer</span>
+{
+    <span class="keyword">public string</span> Name => <span class="string">"Omar Khattab"</span>;
+    <span class="keyword">public string</span> Role => <span class="string">"Backend Dev"</span>;
+    
+    <span class="keyword">public string</span>[] Skills => <span class="keyword">new</span>[] 
+    {
+        <span class="string">"C#"</span>, <span class="string">".NET"</span>, <span class="string">"ASP.NET Core"</span>,
+        <span class="string">"SQL Server"</span>, <span class="string">"API Design"</span>
+    };
+    
+    <span class="keyword">public bool</span> IsAvailable => <span class="bool">true</span>;
+}</code></pre>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="profile-placeholder">
+                            <i class="fas fa-user-astronaut"></i>
+                        </div>
+                        <div class="frame-border"></div>
+                    </div>
+                    <div class="floating-badge badge-1">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="floating-badge badge-3">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Backend Developer & Software Engineer</h3>
+                    <p>
+                        I'm a passionate developer dedicated to crafting robust backend solutions and secure,
+                        scalable software systems. My journey in tech is driven by curiosity and a constant
+                        desire to learn and improve.
+                    </p>
+                    <div class="goals-section">
+                        <h4><i class="fas fa-bullseye"></i> My Goals</h4>
+                        <ul class="goals-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Become a well-known developer in the tech community</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Master backend architecture, database optimization & secure software design</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Contribute to open-source projects and share knowledge</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="interests-tags">
+                        <span class="tag"><i class="fas fa-lock"></i> Secure Coding</span>
+                        <span class="tag"><i class="fas fa-server"></i> API Development</span>
+                        <span class="tag"><i class="fas fa-project-diagram"></i> System Design</span>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1x8PAAE1JpNxGQ5hrG3tX2CiyEDj9HQ3j/view" target="_blank"
+                        class="btn btn-primary">
+                        <i class="fas fa-download"></i>
+                        <span>Download CV</span>
+                    </a>
+                </div>
+            </div>
+            <span class="section-tag closing">&lt;/about&gt;</span>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">Tech Stack</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                                    alt="C#">
+                            </div>
+                            <span class="skill-name">C#</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg"
+                                    alt="Go">
+                            </div>
+                            <span class="skill-name">Go</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                                    alt="Java">
+                            </div>
+                            <span class="skill-name">Java</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-layer-group"></i>
+                        <h3>Frameworks</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
+                                    alt=".NET">
+                            </div>
+                            <span class="skill-name">.NET</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg"
+                                    alt="ASP.NET Core">
+                            </div>
+                            <span class="skill-name">ASP.NET Core</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-database" style="font-size: 2rem; color: #68217a;"></i>
+                            </div>
+                            <span class="skill-name">Entity Framework</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
+                                    alt="SQL Server">
+                            </div>
+                            <span class="skill-name">MS SQL Server</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                                    alt="Git">
+                            </div>
+                            <span class="skill-name">Git</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+                                    alt="Postman">
+                            </div>
+                            <span class="skill-name">Postman</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                    alt="GitHub">
+                            </div>
+                            <span class="skill-name">GitHub</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="section-tag closing">&lt;/skills&gt;</span>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="csharp">C#</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="data">Data</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="data">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-taxi"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/Umar-Khattab/NYC-Taxi-Data-Search-Engine" target="_blank"
+                                class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>NYC Taxi Data Search Engine</h3>
+                        <p>A powerful search engine for NYC taxi data with advanced querying capabilities.</p>
+                        <div class="project-tech">
+                            <span>Data Engineering</span>
+                            <span>Search</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card" data-category="csharp">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/Umar-Khattab/E-LearningPlatform" target="_blank"
+                                class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Learning Platform</h3>
+                        <p>A comprehensive e-learning platform built with modern technologies.</p>
+                        <div class="project-tech">
+                            <span>C#</span>
+                            <span>.NET</span>
+                            <span>Education</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card" data-category="web csharp">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-boxes"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/Umar-Khattab/Inventory-Managment-System" target="_blank"
+                                class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Inventory Management System</h3>
+                        <p>Full-stack inventory management solution with real-time tracking.</p>
+                        <div class="project-tech">
+                            <span>C#</span>
+                            <span>CSS</span>
+                            <span>Web</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card" data-category="csharp">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/Umar-Khattab/MedTech" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>MedTech</h3>
+                        <p>Healthcare technology solution for medical data management.</p>
+                        <div class="project-tech">
+                            <span>C#</span>
+                            <span>Healthcare</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="project-card" data-category="csharp web">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/Umar-Khattab/CodeAlpha-URLShortener-base62Encoding"
+                                target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>URL Shortener</h3>
+                        <p>Efficient URL shortening service using Base62 encoding algorithm.</p>
+                        <div class="project-tech">
+                            <span>C#</span>
+                            <span>Algorithms</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 6 -->
+                <div class="project-card" data-category="csharp">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/Umar-Khattab/ID-Card-Generator" target="_blank"
+                                class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>ID Card Generator</h3>
+                        <p>Automated ID card generation system with customizable templates.</p>
+                        <div class="project-tech">
+                            <span>C#</span>
+                            <span>Graphics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more">
+                <a href="https://github.com/Umar-Khattab?tab=repositories" target="_blank" class="btn btn-primary">
+                    <span>View All 24 Projects</span>
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <span class="section-tag closing">&lt;/projects&gt;</span>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>
+                        I'm always open to discussing new projects, creative ideas,
+                        or opportunities to be part of your vision.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="label">Email</span>
+                                <a href="mailto:omar@example.com">Contact via GitHub</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="label">Location</span>
+                                <span>Available for Remote Work</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Umar-Khattab" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <span class="section-tag closing">&lt;/contact&gt;</span>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span>&lt;OK/&gt;</span>
+            </div>
+            <p class="footer-text">
+                Designed & Built by <span class="highlight">Omar Khattab Hassan</span>
+            </p>
+            <p class="copyright">
+                &copy; 2024 All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
